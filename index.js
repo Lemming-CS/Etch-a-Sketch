@@ -17,9 +17,9 @@ function makeGrid()
         grid.replaceChildren()
         for(let i = 0; i < number; i++)
         {
-            let column = document.createElement("div");
-            column.classList.add("column");
-            grid.appendChild(column);
+            let row = document.createElement("div");
+            row.classList.add("row");
+            grid.appendChild(row);
             for(let j = 0; j < number; j++)
             {
                 let cell = document.createElement("div");
@@ -44,7 +44,7 @@ function makeGrid()
                 {
                     cell.onmouseover = () => { cell.style.background = "black"; };
                 }
-                column.appendChild(cell);
+                row.appendChild(cell);
             }
         }
     }

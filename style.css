@@ -12,7 +12,7 @@ body {
 h1 {
     font-family: "Chewy", Arial, Helvetica, sans-serif;
 }
-.container, .grid, .column {
+.container, .grid, .row {
     display: flex;
 }
 .container {
@@ -57,7 +57,7 @@ h1 {
     gap: 30px;
 }
 
-.column {
+.row {
     flex: 1;
 }
 .cell {

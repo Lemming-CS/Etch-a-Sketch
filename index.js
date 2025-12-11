@@ -1,7 +1,9 @@
 let grid = document.querySelector(".grid");
 let submit = document.querySelector(".submit");
-let rainbow = document.querySelector(".rainbow");
+let rainbowButton = document.querySelector(".rainbow");
+let darkeningButton = document.querySelector(".darkening")
 let israinbow = false;
+let isdarkening = false
 
 makeGrid()
 function makeGrid()
@@ -28,6 +30,16 @@ function makeGrid()
                      ${Math.floor(Math.random()*255)},
                      ${Math.floor(Math.random()*255)}`; };
                 }
+                else if(isdarkening)
+                {
+                    let current = 255
+                    cell.style.background = `rgb(255, 255, 255)`
+                    cell.onmouseover = () => {
+                        current = current - 30;
+                        cell.style.background = `rgb(${current},
+                         ${current}, 
+                         ${current})`;}
+                }
                 else
                 {
                     cell.onmouseover = () => { cell.style.background = "black"; };
@@ -41,10 +53,22 @@ function makeGrid()
     }
 }
 
-rainbow.addEventListener("click", function() {
-    israinbow = !israinbow
-    rainbow.classList.toggle("act")
-    makeGrid()
+rainbowButton.addEventListener("click", function() {
+    if (isdarkening) {
+        darkeningButton.click()
+    }
+    israinbow = !israinbow;
+    rainbowButton.classList.toggle("act");
+    makeGrid();
 });
+
+darkeningButton.addEventListener("click", function() {
+    if (israinbow) {
+        rainbowButton.click()
+    }  
+    isdarkening = !isdarkening;
+    darkeningButton.classList.toggle("act");
+    makeGrid();
+})
 
 submit.addEventListener("click", makeGrid);

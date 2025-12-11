@@ -33,20 +33,20 @@ h1 {
     outline: 4px solid rgb(236, 174, 137);
 }
 
-.number,  .submit, .rainbow{
+.number, .submit, button{
     padding: 10px;
     border-radius: 12px;
     border: 3px solid rgb(236, 174, 137);
 }
 
-.submit, .rainbow{
+.submit, button{
     background-color: wheat;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
-.rainbow.act, .submit:active {
+.rainbow.act, .submit:active, .darkening.act{
     background-color: rgb(236, 174, 137);
     color: rgb(200, 255, 0);
 }

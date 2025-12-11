@@ -1,0 +1,39 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+}
+
+.container, .grid {
+    border-radius: 8px;
+    display: flex;
+}
+.container {
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    border: 4px solid rgb(0, 190, 190);
+}
+
+.grid {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+.number,  .submit {
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 150px;
+}
+.submit {
+    background-color: wheat;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}

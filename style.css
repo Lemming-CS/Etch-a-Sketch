@@ -44,9 +44,13 @@ h1 {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+    transition-duration: 0.2ms;
+    transition-property: all;
+    transition-behavior: initial;
 }
 
 .rainbow.act, .submit:active, .darkening.act{
+    transform:translateY(-5px);
     background-color: rgb(236, 174, 137);
     color: rgb(200, 255, 0);
 }

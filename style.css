@@ -49,10 +49,12 @@ h1 {
     transition-behavior: initial;
 }
 
-.rainbow.act, .submit:active, .darkening.act{
-    transform:translateY(-5px);
+button.act, .submit:active{
     background-color: rgb(236, 174, 137);
     color: rgb(200, 255, 0);
+}
+button.act {
+    transform:translateY(-5px);
 }
 .form {
     display: flex;

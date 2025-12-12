@@ -35,7 +35,7 @@ function makeGrid()
                     let current = 255
                     cell.style.background = `rgb(255, 255, 255)`
                     cell.onmouseover = () => {
-                        current = current - 30;
+                        current = current - 25;
                         cell.style.background = `rgb(${current},
                          ${current}, 
                          ${current})`;}

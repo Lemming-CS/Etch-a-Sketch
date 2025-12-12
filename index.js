@@ -3,7 +3,7 @@ let submit = document.querySelector(".submit");
 let rainbowButton = document.querySelector(".rainbow");
 let darkeningButton = document.querySelector(".darkening")
 let israinbow = false;
-let isdarkening = false
+let isdarkening = false;
 
 makeGrid()
 function makeGrid()
